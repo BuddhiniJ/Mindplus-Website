@@ -1,36 +1,111 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mind+ Website
+
+Landing page and research showcase for the university project:
+
+Mind+ - A Digital Companion for Academic Stress Management
+
+## Overview
+
+This website presents the Mind+ concept to students, evaluators, researchers, and potential investors. It is built as a single-page, responsive experience with a modern visual style and structured research narrative.
+
+## Tech Stack
+
+- Next.js (App Router)
+- React
+- TypeScript
+- Tailwind CSS v4
+- Lucide React (icons)
+
+## Key Sections
+
+The page includes:
+
+- Hero
+- Problem
+- Solution
+- Core Components (Features)
+- Demo Preview
+- How It Works (Architecture)
+- Results and Impact
+- Why We Are Different
+- Team
+- Research
+- Contact and CTA
+
+## Project Structure
+
+- app/page.tsx: Main one-page UI and content
+- app/layout.tsx: Root layout, fonts, metadata
+- app/globals.css: Global styles, gradients, animations
+- public/demo: Brand assets and demo images (logo files)
+- public/team: Team member profile images
 
 ## Getting Started
 
-First, run the development server:
+1. Install dependencies:
+
+```bash
+npm install
+```
+
+2. Start development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Available Scripts
 
-## Learn More
+- npm run dev: Start development server
+- npm run build: Build for production
+- npm run start: Run production build
+- npm run lint: Run ESLint checks
 
-To learn more about Next.js, take a look at the following resources:
+## Content and Asset Updates
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Update Team Members
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Edit the `team` array in `app/page.tsx`:
 
-## Deploy on Vercel
+- name
+- role
+- image
+- imageAlt
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Place team images in `public/team` and reference them with paths like `/team/member-01.png`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Update Logo
+
+Current logo assets are in `public/demo`.
+
+To change the navbar logo, update the `Image` source in `app/page.tsx` (currently pointing to `/demo/Logo2.png`).
+
+### Update Core Components
+
+Edit the `features` array in `app/page.tsx` to change:
+
+- feature title
+- short description
+- icon mapping
+
+## Notes
+
+- The navbar is fixed at the top for quick section navigation.
+- Smooth scrolling and fade-in animations are enabled.
+- Layout is responsive for mobile, tablet, and desktop.
+
+## Deployment
+
+This is a standard Next.js app and can be deployed on Vercel or any Node.js hosting platform.
+
+Example Vercel flow:
+
+1. Push repository to GitHub
+2. Import project in Vercel
+3. Deploy with default Next.js settings
