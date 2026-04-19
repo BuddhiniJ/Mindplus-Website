@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mind+ | Domain</title>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-top">
+      <div class="brand">
+        <div class="brand-badge">
+          <img src="../assets/images/Logo.jpg" alt="Mind+ logo">
+        </div>
+        <div>
+          <h1>Mind+ Research Project</h1>
+          <p>A Digital Companion for Academic Stress Management</p>
+        </div>
+      </div>
+      <div class="search-wrap">
+        <form class="search-form" action="#" role="search">
+          <label for="globalSearch" class="subtitle">Search Site</label>
+          <div class="search-row">
+            <input id="globalSearch" type="search" placeholder="Try: methodology, literature, technologies..."
+              autocomplete="off">
+            <button type="submit" aria-label="Search site">Go</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <nav class="main-nav" aria-label="Main navigation">
+      <div class="container">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a class="active" href="domain.html" aria-current="page">Domain</a></li>
+          <li><a href="milestones.html">Milestones</a></li>
+          <li><a href="documents.html">Documents</a></li>
+          <li><a href="presentations.html">Presentations</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <div class="container">
+      <section class="card">
+        <h2 class="section-title">Research Domain</h2>
+      </section>
+
+      <section class="card" style="margin-top:1rem;">
+        <h3 class="section-title">Literature Survey</h3>
+        <p>
+          Academic stress among university students has become a growing concern due to increasing
+          academic workload, tight deadlines, and performance pressure. Existing digital mental health
+          applications such as Headspace, Calm, and Daylio primarily focus on general wellness and
+          meditation practices. While these platforms support emotional well-being, they lack
+          personalization and are not specifically tailored to academic environments.
+        </p>
+        <p>
+          Recent studies highlight the importance of integrating behavioral data such as sleep and
+          activity with self-reported emotional states to better understand stress patterns.
+          Additionally, machine learning approaches such as clustering and time-series forecasting have
+          been explored for mental health prediction, but their application in academic stress
+          management remains limited.
+        </p>
+        <p>
+          Furthermore, voice-based emotion detection and natural language processing-driven counseling
+          systems are emerging as promising techniques for improving user engagement and accessibility
+          in mental health support systems.
+        </p>
+      </section>
+
+      <section class="grid-2" style="margin-top:1rem;">
+        <article class="card">
+          <h3 class="section-title">Research Gap</h3>
+          <ul class="clean-list">
+            <li>Most systems are reactive, identifying stress only after it occurs.</li>
+            <li>Lack of personalization based on individual behavioral patterns.</li>
+            <li>Minimal integration of multi-modal data such as voice, mood, sleep, and academic workload.</li>
+            <li>Absence of academic-specific stress analysis.</li>
+            <li>No effective use of predictive models for proactive intervention.</li>
+            <li>Limited support for anonymous and stigma-free counseling.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3 class="section-title">Research Problem</h3>
+          <p>
+            How can a personalized, data-driven system be designed to accurately predict short-term
+            academic stress trends, provide adaptive and meaningful visualizations of stress patterns,
+            enable early intervention before stress peaks occur, and support students through anonymous
+            and accessible mental health resources?
+          </p>
+        </article>
+      </section>
+
+      <section class="card" style="margin-top:1rem;">
+        <h3 class="section-title">Research Objectives</h3>
+        <p><strong>Main Objective:</strong> To develop an intelligent digital companion that helps university students
+          monitor, predict, and manage academic stress proactively.</p>
+        <p><strong>Specific Objectives:</strong></p>
+        <ul class="clean-list">
+          <li>To collect and analyze multi-modal user data such as mood, sleep, voice, and academic context.</li>
+          <li>To identify individual stress patterns through stress fingerprinting.</li>
+          <li>To develop a hybrid machine learning model for stress prediction.</li>
+          <li>To design an adaptive heatmap visualization for stress representation.</li>
+          <li>To implement real-time coping mechanisms and interventions.</li>
+          <li>To provide anonymous counseling support using NLP techniques.</li>
+        </ul>
+      </section>
+
+      <section class="card" style="margin-top:1rem;">
+        <h3 class="section-title">Methodology</h3>
+        <ol class="clean-list">
+          <li>Data Collection: Active inputs include mood logs, voice journals, and academic deadlines, while passive
+            inputs include sleep patterns and activity data.</li>
+          <li>Stress Fingerprinting: Extract features from behavioral data and apply clustering techniques such as
+            K-Means and DBSCAN to classify stress types like deadline-sensitive and sleep-reactive.</li>
+          <li>Stress Forecasting: Use time-series and machine learning models, including Random Forest and LSTM, to
+            predict stress levels 3 to 5 days ahead.</li>
+          <li>Visualization: Present past, present, and predicted stress levels using an adaptive calendar heatmap.</li>
+          <li>Intervention and Support: Deliver personalized recommendations, adaptive audio-based relaxation
+            soundscapes, anonymous NLP-based counseling, and community-based peer support via voice analysis.</li>
+        </ol>
+      </section>
+
+      <section class="card" style="margin-top:1rem;">
+        <h3 class="section-title">Technologies Used</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Area</th>
+              <th>Technology</th>
+              <th>Purpose</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Frontend</td>
+              <td>React Native</td>
+              <td>Mobile application interface</td>
+            </tr>
+            <tr>
+              <td>Backend</td>
+              <td>Firebase</td>
+              <td>Authentication, Firestore, and Cloud Functions</td>
+            </tr>
+            <tr>
+              <td>Machine Learning</td>
+              <td>Python, Scikit-learn, TensorFlow</td>
+              <td>Clustering, Random Forest, and LSTM models</td>
+            </tr>
+            <tr>
+              <td>Other Technologies</td>
+              <td>Natural Language Processing, Voice Processing</td>
+              <td>Counseling support and stress detection in journaling</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Mind+ Research Project | Academic Year 2026</p>
+      <p><a href="../index.html">Return to Home</a></p>
+    </div>
+  </footer>
+  <script src="../assets/js/site-search.js"></script>
+</body>
+
+</html>
