@@ -58,7 +58,7 @@
 
         <article class="card">
           <h3 class="section-title">Quick Message Form</h3>
-          <form action="mailto:it22358684@my.sliit.lk" method="post" enctype="text/plain">
+          <form id="contactForm" action="https://formspree.io/f/mzdoejan" method="POST">
             <label for="name">Name</label>
             <input id="name" name="name" type="text" required>
 
@@ -71,8 +71,14 @@
             <label for="message">Message</label>
             <textarea id="message" name="message" rows="5" required></textarea>
 
+            <!-- Spam protection (honeypot) -->
+            <input type="text" name="_honey" style="display:none">
+            <!-- Disable CAPTCHA -->
+            <input type="hidden" name="_captcha" value="false">
+
             <button type="submit">Send Message</button>
           </form>
+          <div id="formSuccess" style="display:none;color:green;margin-top:1em;">Thank you! Your message has been sent.</div>
         </article>
       </section>
     </div>
@@ -85,5 +91,34 @@
     </div>
   </footer>
   <script src="../assets/js/site-search.js"></script>
+  <script>
+    // Show thank you message after successful Formspree submission
+    document.addEventListener('DOMContentLoaded', function() {
+      var form = document.getElementById('contactForm');
+      var success = document.getElementById('formSuccess');
+      if(form) {
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          var data = new FormData(form);
+          fetch(form.action, {
+            method: 'POST',
+            body: data,
+            headers: { 'Accept': 'application/json' }
+          }).then(function(response) {
+            if (response.ok) {
+              form.reset();
+              success.style.display = 'block';
+            } else {
+              response.json().then(function(data) {
+                alert(data.error || 'Oops! There was a problem submitting your form.');
+              });
+            }
+          }).catch(function() {
+            alert('Oops! There was a problem submitting your form.');
+          });
+        });
+      }
+    });
+  </script>
 </body>
 </html>
