@@ -17,7 +17,8 @@
         </div>
         <div>
           <h1>Mind+ Research Project</h1>
-          <p>A Digital Companion for Academic Stress Management</p>
+          <p>Self-monitoring And Anonymous Counselling Based Digital Companion For
+            Academic Stress Management</p>
         </div>
       </div>
       <div class="search-wrap">
@@ -55,24 +56,90 @@
       <section class="card" style="margin-top:1rem;">
         <h3 class="section-title">Literature Survey</h3>
         <p>
-          Academic stress among university students has become a growing concern due to increasing
-          academic workload, tight deadlines, and performance pressure. Existing digital mental health
-          applications such as Headspace, Calm, and Daylio primarily focus on general wellness and
-          meditation practices. While these platforms support emotional well-being, they lack
-          personalization and are not specifically tailored to academic environments.
+          Academic stress is a significant challenge for university students <a href="#citelist" id="cite1">[1]</a>. Stress can be triggered by
+          various factors, including heavy workloads and exams, as well as contextual and behavioral elements
+          like poor time management, irregular sleep patterns, and personal coping styles <a href="#citelist" id="cite2">[2]</a>. University
+          settings present unique stressors, such as exams and project deadlines, leading to significant
+          stress peaks for students. Responses to this stress vary: some experience anxiety as deadlines
+          approach, while others are impacted by lack of sleep or an overwhelming workload. Traditional
+          stress management tools often use generic strategies that overlook these individual differences.
+          A digital system that detects and predicts stress based on unique behavioral patterns could offer
+          more tailored and proactive support for students.
         </p>
         <p>
-          Recent studies highlight the importance of integrating behavioral data such as sleep and
-          activity with self-reported emotional states to better understand stress patterns.
-          Additionally, machine learning approaches such as clustering and time-series forecasting have
-          been explored for mental health prediction, but their application in academic stress
-          management remains limited.
+           Recent research confirms that university students face ever-increasing stress, making real-time
+           stress monitoring and predictions crucial more than ever <a href="#citelist" id="cite3">[3]</a>. Studies showed that smartphones and
+           wearable sensor data can predict stress levels and academic engagement with significant accuracy <a href="#citelist" id="cite4">[4]</a>.
+           This opens opportunities to shift from reactive stress management to predictive, personalized support
+           systems. However, the effectiveness of digital stress tools hinges on personalization. A review of 150
+           stress-management apps found personalization to be the most common strategy, followed by self-monitoring
+           <a href="#citelist" id="cite5">[5]</a>.
         </p>
         <p>
-          Furthermore, voice-based emotion detection and natural language processing-driven counseling
-          systems are emerging as promising techniques for improving user engagement and accessibility
-          in mental health support systems.
+           Machine learning techniques have gained significant traction in predicting stress levels.
+           Pavankumar Saunshi, Manohar Madgi, P.G Sunitha Hiremath, and Ashok Chikaraddi developed a machine
+           learning framework aimed at the early detection of student stress through behavioral analytics
+           derived from questionnaires <a href="#citelist" id="cite6">[6]</a>. They assessed various algorithms, including Random Forest,
+           Support Vector Machines, and Logistic Regression. Their findings revealed that ensemble learning
+           methods can achieve reliable accuracy in stress prediction. Similarly, Suraj Arya and Anju,
+           along with Nor Azuana Ramli, proposed a stress prediction system that utilized Artificial Neural
+           Networks to analyze factors such as academic workload, sleep patterns, and social influences
+           impacting student stress <a href="#citelist" id="cite7">[7]</a>.
         </p>
+        <p>
+           StudentLife is implemented as a university-scale smartphone sensing system using Android phones
+           that captures mobility, sleep activity, mood logs, and academic performances using a single class
+           of 48 students across a 10-week term at Dartmouth College <a href="#citelist" id="cite8">[8]</a>. It outlined several significant
+           connections between the automatic objective sensor data from smartphones and mental health and
+           educational outcomes of the student body. Even though these results were useful for research
+           purposes and provided strong evidence that passive sensing relates to academic stress, this
+           system lacked personalized forecasting and was not deployed as a tool for students. A team of
+           researchers from Japan has created a mobile application called NokiriMe, which allows students
+           to measure and track their stress over time <a href="#citelist" id="cite9">[9]</a>. This app enables users to not only measure their
+           stress but also to visualize patterns and identify correlations between their stress and various
+           psychological responses. One of the key features of NokiriMe is an academic stress questionnaire,
+           which helps users identify their current stress levels. However, feedback from users indicates
+           that the app could significantly improve in terms of usability and user engagement. To enhance
+           the overall experience, many users have suggested incorporating motivational messages that could
+           inspire and uplift them during challenging times. Additionally, they propose the inclusion of
+           personalized coping strategies tailored to individual stress profiles, which would help students
+           better manage their stress effectively.
+        </p>
+        <p>
+           Personalization in stress modeling is still an area that requires further exploration.
+           One study has implemented a multitask deep learning framework, which led to a significant
+           improvement in stress state classification by identifying individual patterns based on sensor
+           data <a href="#citelist" id="cite10">[10]</a>.
+        </p>
+        <p>
+          Despite recent advancements in mental health technology, significant gaps remain in current methodologies.
+          Many existing systems rely on physiological sensors or extensive labeled datasets, which can be impractical
+          for mobile mental health applications that prioritize being lightweight and accessible. Furthermore, a
+          majority
+          of these systems tend to focus on stress detection rather than on predicting future stress trends,
+          limiting their effectiveness for individuals seeking to manage stress proactively.
+          To overcome these challenges, this research presents a novel approach: a hybrid stress forecasting system
+          that integrates self-reported behavioral data with contextual information related to academic environments.
+          This system visualizes predicted stress levels through a heatmap, allowing users to easily identify potential
+          periods of elevated academic stress in the future.
+
+        </p>
+        </section>
+
+        <section class="card" style="margin-top:1rem;" id="citelist">
+          <h3 class="section-title">References</h3>
+          <ol class="clean-list" style="font-size:0.95em;">
+           <li id="ref1">Kavita Chawla, Vikas Sachdeva, "Domains of stress and coping strategies used by 1st year medical students," National Journal of Physiology, Pharmacy and Pharmacology, vol. 8, no. 3, pp. 366-369, 2018. <a href="#cite1" title="Back to citation">&#8617;</a></li>
+           <li id="ref2">N. Kumaraswamy, "Academic Stress, Anxiety and Depression among College Students- A Brief Review," International Review of Social Sciences and Humanities, vol. 5, no. 1, pp. 135-143, 2013. <a href="#cite2" title="Back to citation">&#8617;</a></li>
+           <li id="ref3">Yunfei Luo, Iman Deznabi, Abhinav Shaw, Natcha Simsiri, Tauhidur Rahman, Madalina Fiterau , "Dynamic clustering via branched deep learning enhances personalization of stress prediction from mobile sensor data," Scientific Reports, 2024. <a href="#cite3" title="Back to citation">&#8617;</a></li>
+           <li id="ref4">Akane Sano; Rosalind W. Picard, "Stress Recognition Using Wearable Sensors and Mobile Phones," in Humaine Association Conference on Affective Computing and Intelligent Interaction, Geneva, Switzerland, 2013. <a href="#cite4" title="Back to citation">&#8617;</a></li>
+           <li id="ref5">M. Alhasani, D. Mulchandani, O. Oyebode, N. Baghaei, and R. Orji, "A Systematic and Comparative Review of Behavior Change Strategies in Stress Management Apps: Opportunities for Improvement," Digital Public Health, vol. 10, 2022. <a href="#cite5" title="Back to citation">&#8617;</a></li>
+           <li id="ref6">Pavankumar Saunshi, Manohar Madgi, P.G Sunitha Hiremath, Ashok Chikaraddi, "A Machine Learning Framework for Early Detection of Student Stress Using Questionaire-Based Behavioral Analytics," vol. 11, pp. 12-20, 2025. <a href="#cite6" title="Back to citation">&#8617;</a></li>
+           <li id="ref7">Suraj Arya, Anju, Nor Azuana Ramli, "Predicting the stress level of students using Supervised Machine Learning and Artificial Neural Network (ANN)," Indian Journal of Engineering, vol. 21, pp. 9-1684, 2024. <a href="#cite7" title="Back to citation">&#8617;</a></li>
+           <li id="ref8">Rui Wang, Fanglin Chen, Zhenyu Chen, Tianxing Li, Gabriella Harari, Stefanie Tignor, Xia Zhou, Dror Ben-Zeev, and Andrew T. Campbell, "StudentLife: assessing mental health, academic performance and behavioral trends of college students using smartphones," in UbiComp '14: Proceedings of the 2014 ACM International Joint Conference on Pervasive and Ubiquitous Computing, 2014. <a href="#cite8" title="Back to citation">&#8617;</a></li>
+           <li id="ref9">Z. Liang, O. Tatha and L. E. Andersen, "Developing mHealth App for Tracking Academic Stress and Physiological Reactions to Stress," in 2020 IEEE 2nd Global Conference on Life Sciences and Technologies (LifeTech), Kyoto, Japan, 2020. <a href="#cite9" title="Back to citation">&#8617;</a></li>
+           <li id="ref10">A. Shaw, N. Simsiri, I. Deznaby, M. Fiterau, T. Rahaman, "Personalized Student Stress Prediction with Deep Multitask Network," ArXiv, 2019. <a href="#cite10" title="Back to citation">&#8617;</a></li>
+          </ol>
       </section>
 
       <section class="grid-2" style="margin-top:1rem;">
